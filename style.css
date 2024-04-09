@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.7) url('img.jpg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Added padding */
+}
+
+.container h1 {
+    color: rgba(255, 21, 0, 0.967);
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 0.3s; /* Reduced transition time */
+}
+
+.navbar ul li a:hover {
+    box-shadow: 0 3px 20px rgb(252, 29, 4) inset,
+        0 3px 20px orangered inset,
+        0 3px 20px rgb(245, 3, 3) inset,
+        0 3px 20px rgb(255, 17, 0) inset;
+}
+
+.navbar .reservation {
+    padding: 8px;
+    background-color: rgb(255, 12, 0);
+    color: #080808;
+}
+
+.content {
+    position: absolute;
+    color: #fff;
+    top: 50%; /* Adjusted positioning */
+    left: 50%; /* Adjusted positioning */
+    transform: translate(-50%, -50%); /* Centered content */
+    text-align: center; /* Centered content */
+}
+
+.content h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+}
+
+.content p {
+    margin-top: 17px;
+}
+
+.search {
+    position: absolute;
+    top: 75%; /* Adjusted positioning */
+    left: 50%; /* Adjusted positioning */
+    transform: translateX(-50%); /* Centered horizontally */
+}
+
+.search input {
+    outline: none;
+    border: none;
+    padding: 12px 20px; /* Adjusted padding */
+    width: 300px; /* Adjusted width */
+}
+
+.submit {
+    position: absolute;
+    top: 90%; /* Adjusted positioning */
+    left: 50%; /* Adjusted positioning */
+    transform: translateX(-50%); /* Centered horizontally */
+}
+
+.submit a {
+    text-decoration: none;
+    color: #080808;
+    padding: 12px 25px;
+    background-color: rgb(255, 12, 0);
+}
